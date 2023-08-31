@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Stanislav Růžička's porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" src="./icon.png" />
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="android-chrome-192x192.png" class="logo">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">My work</a></li>
+                    <li><a href="/">School</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+
+                <h1>Hi, I'm<span> Stanislav</span></h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------------about--------------------->
+    <div id="about">
+        <div class="container"></div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="adam.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Phasellus nec maximus lectus. Fusce congue,
+                    elit id imperdiet rutrum, nunc metus sagittis
+                    lorem, eget eleifend arcu risus eget erat.
+                    Duis pharetra vestibulum nisl id lobortis.
+                    Etiam id faucibus tortor.
+                    Etiam sed urna facilisis, finibus nulla varius, aliquet purus.
+                    Sed nec magna in velit faucibus vehicula.
+                    Nulla sagittis posuere ex ac dapibus.
+                    Vestibulum ante ipsum primis in faucibus orci
+                    luctus et ultrices posuere cubilia curae;
+                    Nulla id posuere odio, a ultrices felis.
+                    Aliquam accumsan blandit odio, quis vulputate purus
+                    facilisis quit
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experinece</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web design</span><br>Designing App/Web interfaces</li>
+                        <li><span>Programing</span><br>using Python programe anything you need</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>designing this web page</li>
+                        <li><span>Programing</span><br>using Python programe anything you need</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Web design</span><br>Designing App/Web interfaces</li>
+                        <li><span>2022</span><br>completed ZŠ TGM Rokycany</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------services----------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My artwork</h1>
+        </div>
+
+    </div>
+
+    <!---------------selected-artwork------------>
+    <div class="section3">
+        <div class="container-art-grid">
+            <img class="item" src="art_work/dc1529c2-b8e0-47d3-8afe-97df7a76de46_upscaled.png" >
+          <div class="item">placeholder</div>
+          <div class="item">placeholder</div>
+          <div class="item">placeholder</div>
+          <div class="item">placeholder</div>
+          <div class="item">placeholder</div>
+          <div class="item">placeholder</div>
+          <div class="item">placeholder</div>
+          <div class="item">placeholder</div>
+        </div>
+        <div class="show-more"><a href="/">Show more</a></div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+
+</body>
+<p>Porfolio designed and programed by myself</p>
