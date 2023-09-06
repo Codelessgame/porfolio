@@ -5,114 +5,119 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body{
+body {
     background: #333232;
     color: #fff;
 }
 
-#header{
+#header {
     width: 100%;
     height: 80vh;
-    background-image:url(background.jpg);
+    background-image: url(background.jpg);
     background-size: cover;
-    background-position:center ;
-}
-.container{
-    padding: 10px 10%;
-    
+    background-position: center;
 }
 
-nav{
-    border-radius: 10px;
-    display:flex;
-    align-items: center;
-    justify-content:space-between;
-    background: rgba(58, 73, 73, 0.137);
-    
+.container {
+    padding: 10px 10%;
+
 }
-.logo{
-    width: 100px; ;
-    margin-left:20px ;
+
+nav {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(58, 73, 73, 0.137);
+
+}
+
+.logo {
+    width: 100px;
+    margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 2px;
-    
+
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    
+
 }
 
-nav ul li a{
-    text-decoration:none;
+nav ul li a {
+    text-decoration: none;
     color: #000;
     font-size: large;
     position: relative;
 }
 
-.header-text{
+.header-text {
     margin-left: 60%;
     margin-top: 10%;
     font-size: 30px;
 
 }
 
-.header-text h1{
+.header-text h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 60px;
     margin-top: 20px;
     color: #e2e2e2ed;
 }
-.header-text h1 span{
+
+.header-text h1 span {
     color: rgb(17, 64, 108);
 }
 
-#about-me{
+#about-me {
     padding: 80px 0;
     color: #e2e2e2ed;
 }
 
 
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about-col-1{
+.about-col-1 {
     padding-left: 5%;
     flex-basis: 35%;
 
 }
 
-.about-col-1 img{
+.about-col-1 img {
     border-radius: 15px;
-    width:100% ;
+    width: 100%;
 }
 
-.about-col-2{
+.about-col-2 {
     padding-right: 10%;
     flex-basis: 60%;
 }
 
-.sub-title{
+.sub-title {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
-.about-col-2 p{
+
+.about-col-2 p {
     font-size: 20px;
 }
 
-.tab-titles{
+.tab-titles {
     display: flex;
-    margin: 20px 0 40px ;
+    margin: 20px 0 40px;
 
 }
-.tab-links{
+
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -120,7 +125,7 @@ nav ul li a{
     position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -131,28 +136,30 @@ nav ul li a{
     transition: 0.4s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-links:hover::after{
+.tab-links:hover::after {
     width: 100%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
-.tab-contents ul li span{
-    color: rgb(179, 4, 4) ;
-    font-size:14px;
+
+.tab-contents ul li span {
+    color: rgb(179, 4, 4);
+    font-size: 14px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
-    display:block;
+
+.tab-contents.active-tab {
+    display: block;
 
 }
 
@@ -162,7 +169,8 @@ nav ul li a{
     max-width: 940px;
 }
 
-.w-container:before, .w-container:after {
+.w-container:before,
+.w-container:after {
     content: " ";
     display: table;
     grid-column-start: 1;
@@ -170,11 +178,12 @@ nav ul li a{
     grid-column-end: 2;
     grid-row-end: 2;
 }
-.collection-list.w-dyn-items{
+
+.collection-list.w-dyn-items {
     display: flex;
 }
 
-.swcard.inner.showcase img{
+.swcard.inner.showcase img {
     width: 50%;
 }
 
@@ -188,38 +197,40 @@ h2 {
 }
 
 
-#artwork-selection{
+#artwork-selection {
     display: flex;
     justify-content: center;
 }
+
 /*artwork*/
-.section3{
+.section3 {
     background-color: #4b4949;
 
 }
 
-.img-showmore{
+.img-showmore {
     display: flex;
     padding: 4px 5%;
 }
-.showmore{
+
+.showmore {
     display: flex;
     justify-content: center;
-    border:#fff solid 4px;
+    border: #fff solid 4px;
     cursor: pointer;
     border-radius: 5px;
-    
+
 }
 
 
 
 
-.page-links{
+.page-links {
     cursor: pointer;
     position: relative;
 }
 
-.page-links::after{
+.page-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -230,19 +241,20 @@ h2 {
     transition: 0.4s;
 }
 
-.page-links.active-page-link::after{
+.page-links.active-page-link::after {
     width: 50%;
 }
 
-.page-links:hover::after{
+.page-links:hover::after {
     width: 100%;
 }
 
-.page-contents{
+.page-contents {
     display: none;
 }
-.page-contents.active-page{
-    display:block;
+
+.page-contents.active-page {
+    display: block;
 
 }
 
@@ -250,15 +262,16 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     padding: 0 2%;
-  }
+}
+
 /* Create four equal columns that sits next to each other */
 .gallery-images-column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-  }
-  
-.gallery-images-column img{
+}
+
+.gallery-images-column img {
     margin-top: 8px;
     padding: 5px 3px;
     vertical-align: middle;
@@ -266,38 +279,40 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-  .gallery-images-column {
-    flex: 50%;
-    max-width: 50%;
-  }
+    .gallery-images-column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .gallery-images-column {
-    flex: 100%;
-    max-width: 100%;
-  }
+    .gallery-images-column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
-  /* Create two equal columns that sits next to each other */
-  
+
+/* Create two equal columns that sits next to each other */
+
 .gallery-images-column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-  }
+}
 
 
 
 
-.container-py-5{
+.container-py-5 {
     display: flex;
 }
 
-.list-inline-item{
+.list-inline-item {
     background-color: #727070;
 }
-.container-text-center p{
-    
+
+.container-text-center p {
+
     justify-content: center;
 }
