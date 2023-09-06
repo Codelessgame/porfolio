@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Stanislav Růžička's porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/icon.png">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="android-chrome-192x192.png" class="logo">
+                <ul>
+                    <li><a class="page-links active-page-link" onclick="opentab2('home')">Home</a></li>
+                    <li><a class="page-links" onclick="opentab2('about')">About</a></li>
+                    <li><a class="page-links" onclick="opentab2('my-work')">My work</a></li>
+                    <li><a class="page-links" onclick="opentab2('school')">School</a></li>
+                </ul>
+            </nav>
+            <div class="header-text active-page page-contents" id="home-header">
+
+                <h1>Hi, I'm<span> Stanislav</span></h1>
+            </div>
+            <div class="header-text page-contents" id="about-header">
+
+                <h1>about</h1>
+            </div>
+            <div class="header-text page-contents" id="my-work-header">
+
+                <h1>this is showcase of my work</h1>
+            </div>
+            <div class="header-text page-contents" id="school-header">
+
+                <h1>about</h1>
+            </div>
+
+        </div>
+    </div>
+    <!--------------------------about--------------------->
+
+    <div class="page-contents active-page" id="home">
+        <div id="about-me">
+            <div class="container"></div>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="adam.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Phasellus nec maximus lectus. Fusce congue,
+                        elit id imperdiet rutrum, nunc metus sagittis
+                        lorem, eget eleifend arcu risus eget erat.
+                        Duis pharetra vestibulum nisl id lobortis.
+                        Etiam id faucibus tortor.
+                        Etiam sed urna facilisis, finibus nulla varius, aliquet purus.
+                        Sed nec magna in velit faucibus vehicula.
+                        Nulla sagittis posuere ex ac dapibus.
+                        Vestibulum ante ipsum primis in faucibus orci
+                        luctus et ultrices posuere cubilia curae;
+                        Nulla id posuere odio, a ultrices felis.
+                        Aliquam accumsan blandit odio, quis vulputate purus
+                        facilisis quit
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experinece</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web design</span><br>Designing App/Web interfaces</li>
+                            <li><span>Programing</span><br>using Python programe anything you need</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>designing this web page</li>
+                            <li><span>Programing</span><br>using Python programe anything you need</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Web design</span><br>Designing App/Web interfaces</li>
+                            <li><span>2022</span><br>completed ZŠ TGM Rokycany</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!---------------------------services----------------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My artwork</h1>
+            </div>
+
+        </div>
+
+        <!---------------selected-artwork------------>
+        <div class="section3">
+            <div class="img-showmore">
+                <div class="gallery-images-column">
+                    <img src="/art_work/1.jpg" >
+                    <img src="/art_work/2.jpg" >
+                    <img src="/art_work/10.jpg" >
+                   
+                </div>
+                <div class="gallery-images-column">
+                    <img src="/art_work/4.jpg" >
+                    <img src="/art_work/5.jpg" >
+                    <img src="/art_work/6.jpg" >
+                </div>
+                <div class="gallery-images-column">
+                    <img src="/art_work/7.jpg" >
+                    <img src="/art_work/8.jpg" >
+                    <img src="/art_work/9.png" >
+                </div>
+                <div class="gallery-images-column">
+                    <img src="/art_work/3.jpg" >
+                    <img src="/art_work/11.jpg" >
+                    <img src="/art_work/12.jpg" >
+                </div>
+            </div>
+            <div class="showmore" onclick="opentab2('about')"> Show more</div>
+        </div>
+    </div>
+
+<!--about new page tab-->
+
+    <div class="page-contents " id="about">
+
+        <div class="images-row">
+            <div class="gallery-images-column">
+                <img src="/art_work/1.jpg" >
+                <img src="/art_work/2.jpg" >
+                <img src="/art_work/3.jpg" >
+                <img src="/art_work/4.jpg" >
+                <img src="/art_work/5.jpg" >
+                <img src="/art_work/6.jpg" >
+            </div>
+            <div class="gallery-images-column">
+                <img src="/art_work/7.jpg" >
+                <img src="/art_work/8.jpg" >
+                <img src="/art_work/9.png" >
+                <img src="/art_work/10.jpg" >
+                <img src="/art_work/11.jpg" >
+                <img src="/art_work/12.jpg" >
+            </div>
+            <div class="gallery-images-column">
+                <img src="/art_work/1.jpg" >
+                <img src="/art_work/2.jpg" >
+                <img src="/art_work/3.jpg" >
+                <img src="/art_work/4.jpg" >
+                <img src="/art_work/5.jpg" >
+                <img src="/art_work/6.jpg" >
+            </div>
+            <div class="gallery-images-column">
+                <img src="/art_work/7.jpg" >
+                <img src="/art_work/8.jpg" >
+                <img src="/art_work/9.png" >
+                <img src="/art_work/10.jpg" >
+                <img src="/art_work/11.jpg" >
+                <img src="/art_work/12.jpg" >
+            </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page-contents " id="my-work"></div>
+        <div id="test" onload="addElement(3,test)"></div>
+
+
+<footer class="bg-white">
+    <div class="container-py-5">
+      <div class="row py-4">
+        <div class="foot-co"><img src="icon.png" alt="" width="90" class="mb-3">
+          <p class="font-italic text-muted">Follow me</p>
+          <ul class="list-inline mt-4">
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <!--<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Wishlist</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+          </ul>-->
+    </div>
+
+    <!-- Copyrights -->
+    <div class="bg-light py-4">
+      <div class="container-text-center">
+        <p class="text-muted mb-0 py-2">© 2023 Stanislav Ruzicka All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
